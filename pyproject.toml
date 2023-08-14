@@ -5,7 +5,10 @@ description = ""
 authors = [
     {name = "Laurent Brack", email = "laurent.brack@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "django>=4.2.4",
+    "djangorestframework>=3.14.0",
+]
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}

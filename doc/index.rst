@@ -10,7 +10,19 @@ Welcome to Profile Rest API's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+Getting Started
+---------------
 
+* :ref:`getting-started`
+
+  yadi yada
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Contents:
+
+   references/getting-started
 
 Indices and tables
 ==================

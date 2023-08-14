@@ -1,0 +1,26 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Laurent Brack", email = "laurent.brack@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.0",
+]
+dev = [
+    "Ipython>=7.16.3",
+]
+doc = [
+    "sphinx>=5.3.0",
+]
+lint = [
+    "black>=23.7.0",
+    "flake8>=5.0.4",
+]

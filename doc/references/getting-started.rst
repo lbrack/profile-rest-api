@@ -24,6 +24,18 @@ box.
   this alias can be run on the host or vagrant box and will start the
   django server on ``0.0.0.0:8000``
 
+Superuser Creation
+------------------
+
+❯ manage createsuperuser
+Email: laurent.brack@protonmail.com
+Name: lbrack
+Password:
+Password (again):
+Superuser created successfully.
+
+.. note:: My password is "moi a mon annee de naissance"
+
 Migrations
 ----------
 
@@ -50,4 +62,14 @@ To apply the migration, type
       Applying contenttypes.0001_initial... OK
       ...
       Applying sessions.0001_initial... OK
+
+Dealing with Models
+-------------------
+
+The general principle is that you create an application, at the same level as the server.
+You create the model for that application in the models file (I think you can make it a package).
+And finally, in the admin.py. you register the model with Django
+
+.. note:: I am assuming here that the server could have different databases.
+
 

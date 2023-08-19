@@ -14,6 +14,9 @@ Getting Started
 ---------------
 
 * :ref:`getting-started`
+* :ref:`django-rest`
+* :ref:`api-doc`
+
 
   yadi yada
 
@@ -23,6 +26,8 @@ Getting Started
    :caption: Contents:
 
    references/getting-started
+   references/django-rest
+   references/api-doc
 
 Indices and tables
 ==================

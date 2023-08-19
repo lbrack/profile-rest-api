@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",  # Add the rest framework
     "rest_framework.authtoken",  # add support for Token
+    "drf_spectacular",
     "profile_api",  # Finally add our application
 ]
 
@@ -126,3 +127,19 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "profile_api.UserProfile"
+
+""" DRF Spectacular configuration
+    https://drf-spectacular.readthedocs.io/en/latest/readme.html#installation
+"""
+
+REST_FRAMEWORK = {
+    # YOUR SETTINGS
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Doodle",
+    "DESCRIPTION": "Laurent Brack",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+    # OTHER SETTINGS
+}

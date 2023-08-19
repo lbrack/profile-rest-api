@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Doodle
+  version: 1.0.0
+  description: Laurent Brack
+paths:
+  /api/hello-view:
+    get:
+      operationId: api_hello_view_retrieve
+      description: |-
+        Returns a list of APIView features
+
+        :param request:
+        :param format:
+        :return:
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid

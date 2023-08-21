@@ -6,15 +6,10 @@ info:
 paths:
   /api/hello-view:
     get:
-      operationId: api_hello_view_retrieve
-      description: |-
-        Returns a list of APIView features
-
-        :param request:
-        :param format:
-        :return:
+      operationId: hello_view_retrieve
+      description: Returns a stupid message
       tags:
-      - api
+      - hello-view
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -22,7 +17,83 @@ paths:
       responses:
         '200':
           description: No response body
+    post:
+      operationId: hello_view_create
+      description: More descriptive text
+      parameters:
+      - in: query
+        name: name
+        schema:
+          $ref: '#/components/schemas/Hello'
+        description: whatever
+        required: true
+        examples:
+          Example1:
+            value:
+              name: fakame
+            summary: short optional summary for example 1
+            description: longer description for example 1
+          Example2:
+            value:
+              name: fakayu2
+            summary: short optional summary for example 2
+            description: longer description for example 2
+      tags:
+      - hello-view
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: hello_view_update
+      description: Pretends to update an object with no PK
+      tags:
+      - hello-view
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    patch:
+      operationId: hello_view_partial_update
+      description: Pretends to patch an object with no PK
+      tags:
+      - hello-view
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    delete:
+      operationId: hello_view_destroy
+      description: Pretends to delete an object with no PK
+      tags:
+      - hello-view
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '204':
+          description: No response body
 components:
+  schemas:
+    Hello:
+      type: object
+      description: Serializes a name field for testing our APIView.
+      properties:
+        name:
+          type: string
+          maxLength: 10
+      required:
+      - name
   securitySchemes:
     basicAuth:
       type: http

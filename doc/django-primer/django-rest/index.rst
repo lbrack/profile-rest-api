@@ -5,6 +5,12 @@
 Django Rest Framework
 *********************
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   view-set
+
 API View
 --------
 
@@ -17,8 +23,9 @@ Most basic view by implementing the HTTP verbs.
 ViewSet
 -------
 
+* :ref:`django-rest-view-sets`
+
 Adding URL
 ----------
 
 Create a url in the app folder
-

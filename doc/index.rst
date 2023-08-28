@@ -14,20 +14,15 @@ Getting Started
 ---------------
 
 * :ref:`getting-started`
-* :ref:`django-rest`
-* :ref:`api-doc`
-
-
-  yadi yada
 
 .. toctree::
    :maxdepth: 1
    :hidden:
    :caption: Contents:
 
-   references/getting-started
-   references/django-rest
-   references/api-doc
+   getting-started
+   django-primer/index
+   references/index
 
 Indices and tables
 ==================

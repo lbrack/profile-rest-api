@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_extensions",  # A series of extensions for Django
     "rest_framework",  # Add the rest framework
     "rest_framework.authtoken",  # add support for Token
     "drf_spectacular",
@@ -142,4 +143,11 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     # OTHER SETTINGS
+}
+
+# See documentation on Models
+GRAPH_MODELS = {
+    # "all_applications": True,
+    "app_labels": ["profile_api"],
+    "group_models": True,
 }

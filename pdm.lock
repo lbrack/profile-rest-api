@@ -2,11 +2,11 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default", "test", "dev", "doc", "lint"]
+groups = ["default", "test", "dev", "doc", "lint", "django"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:b7cb6fb89da53d2ed671b5d9bad316a8b7cff26331dc888ea0e958a7b5e2a3bb"
+content_hash = "sha256:dbc8ea3fc40f675325b54ca9551f613e708f0de9acb5f8af2748afc6ae64688e"
 
 [[package]]
 name = "alabaster"
@@ -204,6 +204,19 @@ dependencies = [
 files = [
     {file = "Django-4.2.4-py3-none-any.whl", hash = "sha256:860ae6a138a238fc4f22c99b52f3ead982bb4b1aad8c0122bcd8c8a3a02e409d"},
     {file = "Django-4.2.4.tar.gz", hash = "sha256:7e4225ec065e0f354ccf7349a22d209de09cc1c074832be9eb84c51c1799c432"},
+]
+
+[[package]]
+name = "django-extensions"
+version = "3.2.3"
+requires_python = ">=3.6"
+summary = "Extensions for Django"
+dependencies = [
+    "Django>=3.2",
+]
+files = [
+    {file = "django-extensions-3.2.3.tar.gz", hash = "sha256:44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a"},
+    {file = "django_extensions-3.2.3-py3-none-any.whl", hash = "sha256:9600b7562f79a92cbf1fde6403c04fee314608fefbb595502e34383ae8203401"},
 ]
 
 [[package]]
@@ -680,6 +693,15 @@ summary = "Pygments is a syntax highlighting package written in Python."
 files = [
     {file = "Pygments-2.14.0-py3-none-any.whl", hash = "sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"},
     {file = "Pygments-2.14.0.tar.gz", hash = "sha256:b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297"},
+]
+
+[[package]]
+name = "pygraphviz"
+version = "1.11"
+requires_python = ">=3.8"
+summary = "Python interface to Graphviz"
+files = [
+    {file = "pygraphviz-1.11.zip", hash = "sha256:a97eb5ced266f45053ebb1f2c6c6d29091690503e3a5c14be7f908b37b06f2d4"},
 ]
 
 [[package]]

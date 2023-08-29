@@ -11,6 +11,25 @@ be fairly similar for OSX.
 First clone the `project <https://github.com/lbrack/profile-rest-api>`_ and then proceed to
 the :ref:`environment-setup`.
 
+Install Graphviz (used for DB model rendering)
+
+.. code-block:: shell
+
+    ❯ sudo apt install graphviz # Graphiz executables and libraries
+    ❯ sudo apt install graphviz-dev # headers to compile the python extension
+
+This should allow for the installation of pygraphviz which will be needed for the
+`dhango-extensions <https://django-extensions.readthedocs.io/en/latest/index.html>`_
+
+.. code-block:: shell
+    ❯ pdm add -dG django pygraphviz
+    Adding packages to django dev-dependencies: pygraphviz
+    🔒 Lock successful
+    Changes are written to pyproject.toml.
+      ✔ Install pygraphviz 1.11 successful
+    🎉 All complete!
+
+
 Once PDM, Vagrant and VirtualBox are installed, you can test the tires by doing the following:
 
 * **[host]** install the project dependencies

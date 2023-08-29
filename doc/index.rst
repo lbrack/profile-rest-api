@@ -21,6 +21,7 @@ Getting Started
    :caption: Contents:
 
    getting-started
+   apps/index
    django-primer/index
    references/index
 

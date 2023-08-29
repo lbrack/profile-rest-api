@@ -1,5 +1,3 @@
-.. include:: ./links.rst
-
 .. _getting-started:
 
 Getting Started
@@ -101,7 +99,7 @@ box.
   django server on ``0.0.0.0:8000``
 
 Superuser Creation
-------------------
+==================
 
 ❯ manage createsuperuser
 Email: laurent.brack@protonmail.com
@@ -113,7 +111,7 @@ Superuser created successfully.
 .. note:: My password is "moi a mon annee de naissance"
 
 Migrations
-----------
+==========
 
 Whenever the model is changed, a migration shall be created. To create a
 migration, type:
@@ -140,7 +138,7 @@ To apply the migration, type
       Applying sessions.0001_initial... OK
 
 Dealing with Models
--------------------
+===================
 
 The general principle is that you create an application, at the same level as the server.
 You create the model for that application in the models file (I think you can make it a package).
@@ -148,4 +146,40 @@ And finally, in the admin.py. you register the model with Django
 
 .. note:: I am assuming here that the server could have different databases.
 
+Building Documentation
+======================
+
+The documentation is built using Sphinx and ReST. It is built on every git push using
+red the docs (https://readthedocs.org/projects/profile-rest-api/) and the documentation
+is visible at https://profile-rest-api.readthedocs.io/en/latest/.
+
+In order to cross reference Django documentation, interpshinx is being used. There is however
+a bug which prevents us from refering to the inventory url directly. Instead, the inventory file
+is downloaded offline and stored in the repos under the ``doc/django.inv``. The current documentation
+is built against Django 4.2 (which is set in the make file).
+
+Unless we change the django documentation, we do not need to update the inventory file. However,
+if this is needed, one need to set the new version in the make file and call ``make django-ref``.
+In addition to downloading the inventory file, this target will also display the content of the
+inventory.
+
+example:
+
+.. code-block:: shell
+
+    ❯ make django-ref
+    ...
+    translation string                       topics/i18n/#term-translation-string
+    view                                     glossary/#term-view
+    content of doc/django.inv version 4.2 - see doc/conf.py for details
+
+to build the documentation, type:
+
+.. code-block:: shell
+
+    ❯ make doc
+    # or to open the doc in the browser
+    ❯ make open
+
+.. seealso:: :ref:`doc-cheat-sheet` for documentation tricks
 

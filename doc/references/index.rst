@@ -5,6 +5,7 @@ References
 
 * :ref:`api-doc`
 * :ref:`environment-setup`
+* :ref:`doc-cheat-sheet`
 
 
 .. toctree::
@@ -14,3 +15,4 @@ References
 
    api-doc
    environment-setup
+   doc-cheat-sheet

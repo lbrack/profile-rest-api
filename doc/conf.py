@@ -37,7 +37,7 @@ For additional information, see the Makefile (target django-ref)
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "django": (
-        f"https://docs.djangoproject.com/en/{os.environ['DJANGOVERSION']}/",
+        f"https://docs.djangoproject.com/en/{os.environ.get('DJANGOVERSION', '4.2')}/",
         "django.inv",
     ),
 }

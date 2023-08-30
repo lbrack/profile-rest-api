@@ -6,7 +6,7 @@ groups = ["default", "test", "dev", "doc", "lint", "django"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:55a3237ec7862e0cb7c1473c8faeb2e6f171509d05b7eea2aa1b9075b8730f65"
+content_hash = "sha256:7d2163a6ce76f4059deb3f3636646f5280fad299c52099782246013233725fc8"
 
 [[package]]
 name = "alabaster"
@@ -900,6 +900,16 @@ files = [
     {file = "rpds_py-0.9.2-pp39-pypy39_pp73-musllinux_1_2_i686.whl", hash = "sha256:99b1c16f732b3a9971406fbfe18468592c5a3529585a45a35adbc1389a529a03"},
     {file = "rpds_py-0.9.2-pp39-pypy39_pp73-musllinux_1_2_x86_64.whl", hash = "sha256:c27ee01a6c3223025f4badd533bea5e87c988cb0ba2811b690395dfe16088cfe"},
     {file = "rpds_py-0.9.2.tar.gz", hash = "sha256:8d70e8f14900f2657c249ea4def963bed86a29b81f81f5b76b5a9215680de945"},
+]
+
+[[package]]
+name = "setuptools"
+version = "68.1.2"
+requires_python = ">=3.8"
+summary = "Easily download, build, install, upgrade, and uninstall Python packages"
+files = [
+    {file = "setuptools-68.1.2-py3-none-any.whl", hash = "sha256:3d8083eed2d13afc9426f227b24fd1659489ec107c0e86cec2ffdde5c92e790b"},
+    {file = "setuptools-68.1.2.tar.gz", hash = "sha256:3d4dfa6d95f1b101d695a6160a7626e15583af71a5f52176efa5d39a054d475d"},
 ]
 
 [[package]]

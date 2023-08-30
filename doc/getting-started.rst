@@ -22,6 +22,7 @@ This should allow for the installation of pygraphviz which will be needed for th
 `dhango-extensions <https://django-extensions.readthedocs.io/en/latest/index.html>`_
 
 .. code-block:: shell
+
     ❯ pdm add -dG django pygraphviz
     Adding packages to django dev-dependencies: pygraphviz
     🔒 Lock successful

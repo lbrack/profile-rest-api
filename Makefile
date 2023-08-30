@@ -7,7 +7,8 @@ PROJECT_ROOT=`pdm info --where`
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= pdm run sphinx-build
 SOURCEDIR     = doc
-BUILDDIR      = .sphinx-build
+#BUILDDIR      = .sphinx-build
+BUILDDIR      = _readthedocs
 export DJANGOVERSION = 4.2
 
 

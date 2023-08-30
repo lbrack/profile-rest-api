@@ -15,4 +15,5 @@ Django Applications
           from the django-extensions. To re-regenerate, go to the project root and type:
 
           .. code-block:: shell
+
             ❯ make render-model

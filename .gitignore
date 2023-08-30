@@ -162,3 +162,4 @@ cython_debug/
 .idea/
 .vagrant/
 .sphinx-build/
+_readthedocs/

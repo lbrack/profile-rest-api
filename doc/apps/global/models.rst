@@ -3,4 +3,4 @@
 Global Models
 *************
 
-.. image:: ./images/models.png
+.. thumbnail:: ./images/models.png

@@ -9,6 +9,9 @@
     Django (most like - I haven't read the details here) uses the UserProfileManager
     bound to UserProfile.object in order to create the user record.
 
+    see https://docs.djangoproject.com/en/4.2/topics/auth/customizing/#substituting-a-custom-user-model
+    for additional details.
+
 """
 
 from django.db import models

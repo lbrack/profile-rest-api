@@ -16,7 +16,7 @@ Getting Started
 * :ref:`getting-started`
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 5
    :hidden:
    :caption: Contents:
 

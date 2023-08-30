@@ -11,6 +11,8 @@ SOURCEDIR     = doc
 BUILDDIR      = _readthedocs
 export DJANGOVERSION = 4.2
 
+GRAPH_MODEL_APP=-I profile_api
+GRAPH_MODEL_APP=-g
 
 PYTHON=pdm run
 PYROOT=cd `pdm info --where`
@@ -43,5 +45,5 @@ render-model: # Generate a rendering of the models for each app using the Django
 	@echo Generating global model $(PROJECT_ROOT)/doc/apps/global/images/models.png
 	$(MANAGE) graph_models -a -g -o $(PROJECT_ROOT)/doc/apps/global/images/models.png
 	@echo Generating profile-api model $(PROJECT_ROOT)/doc/apps/profile-api/images/models.png
-	$(MANAGE) graph_models -a -Iprofile_api -o $(PROJECT_ROOT)/doc/apps/profile-api/images/models.png
+	$(MANAGE) graph_models -a $(GRAPH_MODEL_APP) -o $(PROJECT_ROOT)/doc/apps/profile-api/images/models.png
 

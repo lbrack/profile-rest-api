@@ -15,7 +15,7 @@ build:
     # rust: "1.64"
     # golang: "1.19"
   commands:
-    - pip install --user pdm
+    - pip install pdm
     - make doc
 
 # Build documentation in the "docs/" directory with Sphinx
